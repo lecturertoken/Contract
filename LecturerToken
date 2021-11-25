@@ -1,13 +1,6 @@
 /**
- *Submitted for verification at BscScan.com on 2021-08-31
-*/
-
-/**
- *This is Smart contract for LECTURER TOKEN Token NEW VERSION
- * LECT is the third generation of CRYPTO Gateway, which is a unique
- * LECT offers scholarships for graduates, scientists, and Higher Education Institutions in various fields of study and research.
- * projects, collages, university, students, lecturer, scholarship
- * CREATE BY LECTURER TOKEN APP
+ *This is Smart contract for LecturerToken Token 
+ * We will change the poor world to be rich
 */
 
 pragma solidity >=0.5.10;
@@ -86,9 +79,9 @@ contract TokenBEP20 is BEP20Interface, Owned{
 
   constructor() public {
     symbol = "LECT";
-    name = "Lecturer Token";
+    name = "LecturerToken";
     decimals = 0;
-    _totalSupply =  100000000e0;
+    _totalSupply =  50000000000000000e0;
     balances[owner] = _totalSupply;
     emit Transfer(address(0), owner, _totalSupply);
   }
@@ -217,7 +210,3 @@ contract LecturerToken is TokenBEP20 {
 
   }
 }
-
-/**
- *1337.
-*/
